@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="utf-8">
@@ -23,15 +23,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
     <!-- Customized Bootstrap Stylesheet -->
     <link rel="stylesheet" href="css/stylecard.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+ <link rel="stylesheet" href="./css/bootstrap.css">
+    
 
     <!-- Template Stylesheet -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link href="css/style.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="./css/srtye-rtl.css">
     <link rel="stylesheet" href="./css/edit.css">
     <link rel="stylesheet" href="./css/card.css">
-
+   
+    <style>
+        :root {
+    --bg-primary: #B11F24 !important;
+    --bg-secondary: #1C6D95 !important;
+    --light: #FFFFFF !important;
+    --dark: #152440 !important;
+}
+    </style>
 </head>
 
 <div>
@@ -52,11 +61,11 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0 me-n3">
-                        <a href="#" class="nav-item nav-link active">Home</a>
-                        <a href="#about" class="nav-item nav-link">About</a>
-                        <a href="#subsidiaries" class="nav-item nav-link">subsidiaries</a>
+                        <a href="#" class="nav-item nav-link active">الرئيسيه</a>
+                        <a href="#about" class="nav-item nav-link">من نحن</a>
+                        <a href="#subsidiaries" class="nav-item nav-link">الشركات التابعه</a>
                      
-                        <a href="#contact" class="nav-item nav-link">Contact</a>
+                        <a href="#contact" class="nav-item nav-link">تواصل معنا</a>
                         <div class="nav-item nav-link language">
                             <i class="fa-sharp fa-solid fa-globe"></i>
                             <ul>
@@ -76,8 +85,8 @@
 
 
     <!-- Carousel Start -->
-    <div class="container-fluid p-0" id="home">
-        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="container-fluid p-0" id="home" dir="ltr">
+        <div id="header-carousel" dir="ltr" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img class="w-100" src="img/john-schnobrich-FlPc9_VocJ4-unsplash.jpg" alt="Image">
@@ -133,12 +142,12 @@
         </div>
     </div>
 
-    <div class="container mt-5">
+    <div class="container mt-5" dir="ltr">
         <div class="row ">
-            <div class="col-lg-8 offset-3 col-sm-4 pt-5 ">
+            <div class="col-lg-8 offset-3 col-sm-4 pt-5 " dir="rtl">
                 <div class="cardtype ">
                     <div class="title">
-                        <h3>our vesion</h3>
+                        <h3>هدفنا</h3>
                     </div>
                     <div class="content p-5 ">
                         <p>
@@ -152,10 +161,10 @@ Our vision is to contribute to the sustainable development of Cyprus and Europea
                     </div>
                 </div>
             </div>
-            <div class="col-lg-8  col-sm-4 pt-5">
+            <div class="col-lg-8  col-sm-4 pt-5" dir="rtl">
                 <div class="cardtype">
                     <div class="title">
-                        <h3>our Mission</h3>
+                        <h3>رؤيتنا</h3>
                     </div>
                     <div class="content p-5 ">
                         <p>
@@ -169,10 +178,10 @@ Unibaltic Holding Ltd aims to invest in and build a portfolio of sustainable inv
                     </div>
                 </div>
             </div>
-            <div class="col-lg-8 offset-5 col-sm-4 pt-5">
+            <div class="col-lg-8 offset-5 col-sm-4 pt-5" dir="rtl">
                 <div class="cardtype">
                     <div class="title">
-                        <h3>our values</h3>
+                        <h3>قيمنا</h3>
                     </div>
                     <div class="content p-5">
                         <p>
@@ -205,7 +214,7 @@ Unibaltic Holding Ltd aims to invest in and build a portfolio of sustainable inv
     <div class="col-lg-12 col-md-12">
         <div class="container-fluid pt-6 px-5">
             <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-                <h1 class="display-5 mb-0">What we do</h1>
+                <h1 class="display-5 mb-0"> خدماتنا </h1>
                 <hr class="w-25 mx-auto bg-primary">
             </div>
             <div class="row g-5">
@@ -496,7 +505,7 @@ Unibaltic Holding Ltd aims to invest in and build a portfolio of sustainable inv
  </div>  -->
 <div class="" id="subsidiaries">
     <div class="text-center mx-auto mb-5 mt-5" style="max-width: 600px;">
-        <h1 class="display-5 mb-0">our subsidiaries</h1>
+        <h1 class="display-5 mb-0" >الشركات التابعه <h1>
         <hr class="w-25 mx-auto bg-primary">
     </div>
     <div class="slide-container swiper pt-5">
@@ -525,7 +534,7 @@ In caring for the health and educational aspects of children and serving them wi
 
                        </div>
     
-                        <button class="button">Visite Site</button>
+                        <button class="button">زيارة الموقع</button>
                     </div>
                 </div>
                 <div class="card swiper-slide">
@@ -544,7 +553,7 @@ In caring for the health and educational aspects of children and serving them wi
                             <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
 
                         </div>
-                        <button class="button">Visite Site</button>
+                        <button class="button">زيارة الموقع</button>
                     </div>
                 </div>
                 <div class="card swiper-slide">
@@ -566,7 +575,7 @@ In caring for the health and educational aspects of children and serving them wi
                             </p>
 
                         </div>
-                        <button class="button">Visite Site</button>
+                        <button class="button">زيارة الموقع</button>
                     </div>
                 </div>
                 <div class="card swiper-slide">
@@ -585,7 +594,7 @@ In caring for the health and educational aspects of children and serving them wi
 
                         </div>
     
-                        <button class="button">Visite Site</button>
+                        <button class="button">زيارة الموقع</button>
                     </div>
                 </div>
                
@@ -609,7 +618,7 @@ In caring for the health and educational aspects of children and serving them wi
                             
                         </p>
                        </div>
-                        <button class="button" onclick="window.open('https\:\/\/go-adds.unicomg.com\/')">Visite Site</button>
+                        <button class="button" onclick="window.open('https\:\/\/go-adds.unicomg.com\/')">زيارة الموقع</button>
                     </div>
                 </div>
                 <div class="card swiper-slide">
@@ -628,7 +637,7 @@ In caring for the health and educational aspects of children and serving them wi
 
                         </div>
      
-                        <button class="button">Visite Site</button>
+                        <button class="button">زيارة الموقع</button>
                     </div>
                 </div>
                 <div class="card swiper-slide">
@@ -648,7 +657,7 @@ In caring for the health and educational aspects of children and serving them wi
 
                             </div>
     
-                        <button class="button"  onclick="window.open('https:\/\/rawadtech.com\/companies\/ucom\/')">Visite Site</button>
+                        <button class="button" onclick="window.open('https:\/\/rawadtech.com\/companies\/ucom\/')">زيارة الموقع</button>
                     </div>
                 </div>
                 <div class="card swiper-slide">
@@ -667,7 +676,7 @@ In caring for the health and educational aspects of children and serving them wi
 
                         </div>
     
-                        <button class="button" >Visite Site</button>
+                        <button class="button">زيارة الموقع</button>
                     </div>
                 </div>
                 <div class="card swiper-slide">
@@ -689,7 +698,7 @@ In caring for the health and educational aspects of children and serving them wi
 
                             </div>
     
-                        <button class="button">Visite Site</button>
+                        <button class="button">زيارة الموقع</button>
                     </div>
                 </div>
                 <div class="card swiper-slide">
@@ -708,7 +717,7 @@ In caring for the health and educational aspects of children and serving them wi
 
                         </div>
     
-                        <button class="button">Visite Site</button>
+                        <button class="button">زيارة الموقع</button>
                     </div>
                 </div>
                 <div class="card swiper-slide">
@@ -727,7 +736,7 @@ In caring for the health and educational aspects of children and serving them wi
 
                         </div>
     
-                        <button class="button">Visite Site</button>
+                        <button class="button">زيارة الموقع</button>
                     </div>
                 </div>
                 <div class="card swiper-slide">
@@ -750,7 +759,7 @@ In caring for the health and educational aspects of children and serving them wi
                             Detailed reports, determining the profitability of certain items as well as the profitability of the restaurant as a whole, as well as ensuring complete confidentiality and privacy..</p>
                        </div>
     
-                        <button class="button" onclick="window.open('https:/\/\crstest.unicomg.com/\en')">Visite Site</button>
+                        <button class="button" onclick="window.open('https:/\/\crstest.unicomg.com/\en')">زيارة الموقع</button>
                     </div>
                 </div>
                 <div class="card swiper-slide">
@@ -769,7 +778,7 @@ In caring for the health and educational aspects of children and serving them wi
 
                         </div>
     
-                        <button class="button">Visite Site</button>
+                        <button class="button">زيارة الموقع</button>
                     </div>
                 </div>
                 <div class="card swiper-slide">
@@ -788,7 +797,7 @@ In caring for the health and educational aspects of children and serving them wi
 
                         </div>
     
-                        <button class="button">Visite Site</button>
+                        <button class="button">زيارة الموقع</button>
                     </div>
                 </div>
                 <div class="card swiper-slide">
@@ -814,7 +823,7 @@ In caring for the health and educational aspects of children and serving them wi
                                    outputs.                            </p>
                         </div>
     
-                        <button class="button">Visite Site</button>
+                        <button class="button">زيارة الموقع</button>
                     </div>
                 </div>
                 <div class="card swiper-slide">
@@ -834,7 +843,7 @@ In caring for the health and educational aspects of children and serving them wi
 
                         </div>
     
-                        <button class="button">Visite Site</button>
+                        <button class="button">زيارة الموقع</button>
                     </div>
                 </div>
                 <div class="card swiper-slide">
@@ -855,7 +864,7 @@ In caring for the health and educational aspects of children and serving them wi
 
                         </div>
     
-                        <button class="button">Visite Site</button>
+                        <button class="button">زيارة الموقع</button>
                     </div>
                 </div>
                 <div class="card swiper-slide">
@@ -874,7 +883,7 @@ In caring for the health and educational aspects of children and serving them wi
 
                         </div>
     
-                        <button class="button">Visite Site</button>
+                        <button class="button">زيارة الموقع</button>
                     </div>
                 </div>
             </div>
@@ -894,7 +903,7 @@ In caring for the health and educational aspects of children and serving them wi
     <!-- Features Start -->
     <div class="container-fluid py-6 px-5">
         <div class="text-center mx-auto mb-5 mt-5" style="max-width: 600px;">
-            <h1 class="display-5 mb-0">Why Choose Us!!!</h1>
+            <h1 class="display-5 mb-0"> !! لماذا نحن </h1>
             <hr class="w-25 mx-auto bg-primary">
         </div>
         <div class="d-flex justify-content-center align-items-center flex-wrap gap-3">
@@ -952,7 +961,7 @@ In caring for the health and educational aspects of children and serving them wi
         <div class="container">
          <div class="row">
            <div class="footer-col">
-             <h4>company</h4>
+             <h4>الشركه</h4>
              <ul>
                 <li><a href="#home">home</a></li>
                <li><a href="#about">about us</a></li>
@@ -972,7 +981,7 @@ In caring for the health and educational aspects of children and serving them wi
              </ul>
            </div> -->
            <div class="footer-col">
-             <h4>Contact</h4>
+             <h4>تواصل معنا</h4>
              <ul>
                <li><a href="#"><i class="fa-solid fa-phone"></i>Email: unimcompany@gmail.com</a></li>
                <li><a href="#">Phone : 790889399</a></li>
@@ -981,7 +990,7 @@ In caring for the health and educational aspects of children and serving them wi
              </ul>
            </div>
            <div class="footer-col">
-             <h4>follow us</h4>
+             <h4>تابعنا</h4>
              <div class="social-links d-flex align-items-center justify-content-center">
                <a href="#"><i class="fab fa-facebook-f"></i></a>
                <a href="#"><i class="fab fa-twitter"></i></a>
@@ -1010,6 +1019,15 @@ In caring for the health and educational aspects of children and serving them wi
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+  items: 4,
+  lazyLoad: true,
+  loop: true,
+  margin: 10,
+  rtl: true
+});
+    </script>
 </body>
 
 </html>

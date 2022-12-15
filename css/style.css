@@ -442,8 +442,28 @@ ul{
     position: relative;
 }
 .language ul{
+    display: none;
     position: absolute;
+    z-index: 3;
+    background-color: white;
+   
+    padding: 3px 20px;
 
+}
+
+.language ul li{
+    margin-top: 3px;
+    cursor: pointer;
+   
+}
+.language ul li a{
+    text-transform: capitalize;
+    font-size: 1rem;
+    color: black !important;
+    text-decoration: none;
+}
+.language:hover ul{
+    display: block;
 }
 .nav-item{
     position: relative;
@@ -467,7 +487,7 @@ ul{
     height: 100%;
 }
 .nav-item:hover{
-    color: white !important;
+    /* color: white !important; */
 }
 /*responsive*/
 @media(max-width: 767px){

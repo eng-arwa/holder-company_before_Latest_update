@@ -1,0 +1,20 @@
+
+:root {
+    --primary: #B11F24 !important;
+    --secondary: #1C6D95 !important;
+    --light: #FFFFFF !important;
+    --dark: #152440 !important;
+}
+.cardtype .title::before {
+    position: absolute;
+    right: 0;
+    left: initial;
+    content: '';
+    bottom: -30px;
+    border-width: 15px;
+    border-color: #1c6d95c3 transparent transparent #1c6d95c3;
+    border-style: solid;}
+
+    .cardtype .title {
+        position: absolute;
+        right: -31px;}

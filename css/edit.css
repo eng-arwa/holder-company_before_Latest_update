@@ -10,7 +10,7 @@ nav img {
 }
 
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link.active {
-  color: #1C6D95;
+  color: #1C6D95 !important;
 }
 
 .bg-primary {
